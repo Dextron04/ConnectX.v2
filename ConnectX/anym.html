@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Welcome to Anonymous Board where it doesn't matter who you are you can always leave your thoughts and comments
+        as a stranger</h1>
+
+    <div id="messageBoard">
+
+        <!-- Messages will appear here -->
+    </div>
+
+    <form id="boardForm">
+        <input id="boardInput" type="text" placeholder="Enter message" />
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>

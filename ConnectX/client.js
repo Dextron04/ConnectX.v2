@@ -3,6 +3,8 @@ const chatbox = document.getElementById('chatbox');
 const messageForm = document.getElementById('messageForm');
 const messageInput = document.getElementById('messageInput');
 
+const boardInput = document.getElementById('boardInput');
+
 let username = prompt('Please enter a username: ');
 socket.emit('user-connected', username);
 
