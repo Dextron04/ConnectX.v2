@@ -11,15 +11,17 @@ This is a simple chat application built using Express.js and Socket.IO.
 3. Open a terminal or command prompt and navigate to the project directory.
 
 4. Install the required dependencies by running the following command:
-
+```javascript
 npm install express socket.io
+```
 
 ## Running the Server
 
 To start the server, run the following command:
 
+```javascript
 node server.js
-
+```
 The server will start running and will be accessible at [http://localhost:3000](http://localhost:3000).
 
 You can now open multiple browser windows or tabs and visit [http://localhost:3000](http://localhost:3000) to chat with other connected clients.
