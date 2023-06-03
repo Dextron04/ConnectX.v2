@@ -14,10 +14,17 @@
     <div id="chatbox">
         <!-- Chat messages will appear here -->
     </div>
-    <br>
     <form id="messageForm">
-        <input id="messageInput" type="text" placeholder="Enter message" />
-        <button type="submit">Send</button>
+        <!-- Chat message Input -->
+        <div class="chatmsgwrapper">
+            <input id="messageInput" type="text" placeholder="Enter message" />
+        </div>
+        
+        <!-- Send Button  -->
+        <div id="sendbtnwrapper">
+            <button type="submit">Send</button>
+        </div>
+        
     </form>
 
     <script src="/socket.io/socket.io.js"></script>
