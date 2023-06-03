@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Connect X</title>
+</head>
+<body>
+    <h1>Welcome To Connect X</h1>
+    <h4>This is a private chat application by Tushin Kulshreshtha and it should only be accessible by <u>Authorized Personal</u></h4>
+    <br>
+    <br>
+    <div id="chatbox">
+        <!-- Chat messages will appear here -->
+    </div>
+    <br>
+    <form id="messageForm">
+        <input id="messageInput" type="text" placeholder="Enter message" />
+        <button type="submit">Send</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    
+</body>
+</html>
