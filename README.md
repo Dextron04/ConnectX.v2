@@ -26,7 +26,22 @@ The server will start running and will be accessible at [http://localhost:3000](
 
 You can now open multiple browser windows or tabs and visit [http://localhost:3000](http://localhost:3000) to chat with other connected clients.
 
-## Customize and Extend
+## Customizing the Whitelist
 
-Feel free to customize and extend this chat application according to your requirements. You can modify the client-side code in `client.js` and the server-side code in `server.js`.
+By default, the chat application allows only specific usernames to log in. To customize the whitelist and add or remove names, follow these steps:
+
+1. Open the `server.js` file in a text editor.
+
+2. Locate the following line:
+
+   ```javascript
+  ` const authorizedUsers = ['user1', 'user2', 'user3'];` // Add the authorized usernames here
+
+3. Add or remove usernames as desired within the square brackets ([]). For example, to allow 'user4' to log in, modify the line as follows: 
+
+`const authorizedUsers = ['user1', 'user2', 'user3', 'user4'];` // Add the authorized usernames here
+
+4. Save the server.js file.
+
+5. Restart the server by running the following command: `node server.js`
 
