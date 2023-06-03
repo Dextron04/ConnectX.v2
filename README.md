@@ -35,7 +35,7 @@ By default, the chat application allows only specific usernames to log in. To cu
 2. Locate the following line:
 
    ```javascript
-  ` const authorizedUsers = ['user1', 'user2', 'user3'];` // Add the authorized usernames here
+   const authorizedUsers = ['user1', 'user2', 'user3']; // Add the authorized usernames here
 
 3. Add or remove usernames as desired within the square brackets ([]). For example, to allow 'user4' to log in, modify the line as follows: 
 
