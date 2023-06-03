@@ -17,7 +17,7 @@ socket.on('message', (data) => {
     const el = document.createElement('li');
     el.innerHTML = `${data.username}: ${data.message}`;
     chatbox.appendChild(el);
-    window.scrollTo(0, document.body.scrollHeight);
+    // window.scrollTo(0, document.body.scrollHeight);
 
 });
 
