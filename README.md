@@ -1,7 +1,5 @@
 # ConnectX.v2
 
-# Chat Application with Express.js and Socket.IO
-
 This is a simple chat application built using Express.js and Socket.IO.
 
 ## Initial Setup
