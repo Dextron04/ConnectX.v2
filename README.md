@@ -38,9 +38,9 @@ By default, the chat application allows only specific usernames to log in. To cu
    const authorizedUsers = ['user1', 'user2', 'user3']; // Add the authorized usernames here
 
 3. Add or remove usernames as desired within the square brackets ([]). For example, to allow 'user4' to log in, modify the line as follows: 
-
-`const authorizedUsers = ['user1', 'user2', 'user3', 'user4'];` // Add the authorized usernames here
-
+```javascript
+const authorizedUsers = ['user1', 'user2', 'user3', 'user4']; // Add the authorized usernames here
+```
 4. Save the server.js file.
 
 5. Restart the server by running the following command: `node server.js`
