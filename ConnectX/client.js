@@ -3,7 +3,11 @@ const chatbox = document.getElementById('chatbox');
 const messageForm = document.getElementById('messageForm');
 const messageInput = document.getElementById('messageInput');
 
+// This is for the anonymous board
+
 const boardInput = document.getElementById('boardInput');
+const boardForm = document.getElementById('boardForm');
+const messageBoard = document.getElementById('messageBoard');
 
 let username = prompt('Please enter a username: ');
 socket.emit('user-connected', username);
@@ -25,7 +29,9 @@ socket.on('message', (data) => {
 
 socket.on('login-failure', () => {
     alert('Login Failed!');
-    alert('Your messages will not be sent')
+    alert('Redirecting To Anonymous Board')
+    window.location.assign('anym.html');
+    username = "Anym";
 })
 
 socket.on('user-connected', (username) => {
@@ -35,3 +41,4 @@ socket.on('user-connected', (username) => {
     chatbox.appendChild(el);
     window.scrollTo(0, document.body.scrollHeight);
 })
+
