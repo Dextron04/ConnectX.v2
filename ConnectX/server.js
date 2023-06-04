@@ -62,7 +62,11 @@ function loadMessages() {
 
 function saveMessages(messages) {
     try {
-        fs.writeFileSync(MESSAGE_FILE, JSON.stringify(messages));
+        const formattedMessages = messages.map((msg) => ({
+            date: new Date().toISOString(),
+            message: msg,
+        }));
+        fs.writeFileSync(MESSAGE_FILE, JSON.stringify(formattedMessages));
     } catch (err) {
         console.error('Error saving messages:', err);
     }
