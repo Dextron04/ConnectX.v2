@@ -21,6 +21,3 @@ socket.on('message', (msg) => {
     messageList.appendChild(listItem);
     window.scrollTo(0, document.body.scrollHeight);
 });
-
-
-// x4Q3Xeaj9RDTJmk6
